@@ -14,15 +14,13 @@ router.post('/wx/token', function (req, res, next) {
     let js_code = req.body.code;
     let param = '?appid='+appid+"&secret="+secret+"&js_code"+js_code+"&grant_type="+grant_type;
 	console.log("/wx/token");
-	res.json({status :0});
 	
 	
-	/*
     request({
         url:'GET https://api.weixin.qq.com/sns/jscode2session'+param,
 		//url:'GET https://www.baidu.com'
         method:'GET',
-        headers:{'Content-Type':'text/json' }
+        headers:{ 'Content-Type':'text/json' }
     }, function(error, response, body){
         if(!error && response.statusCode===200){
             //body = JSON.parse(body);
@@ -30,7 +28,7 @@ router.post('/wx/token', function (req, res, next) {
 			//console.log("openid: "+wechat_openid);
 			console.log(body);
 			
-			
+			/*
             WxUser.findOne({where: {openid: wechat_openid}})
                 .then(function (result) {
                     if(result==null){// 用户不存在
@@ -62,9 +60,9 @@ router.post('/wx/token', function (req, res, next) {
                 .catch(function (err) {
                     console.log("error");
                 });
+			*/
         }
     });
-	*/
 });
 
 
