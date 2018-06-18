@@ -24,6 +24,7 @@ router.post('/wx/token', function (req, res, next) {
             let wechat_openid = body.openid;
 			console.log("openid: "+wechat_openid);
 
+			/*
             WxUser.findOne({where: {openid: wechat_openid}})
                 .then(function (result) {
                     if(result==null){// 用户不存在
@@ -55,6 +56,7 @@ router.post('/wx/token', function (req, res, next) {
                 .catch(function (err) {
                     console.log("error");
                 });
+			*/
         }
     });
 });
