@@ -22,6 +22,7 @@ router.post('/wx/token', function (req, res, next) {
         if(!error && response.statusCode===200){
             body = JSON.parse(body);
             let wechat_openid = body.openid;
+			console.log("openid: "+wechat_openid);
 
             WxUser.findOne({where: {openid: wechat_openid}})
                 .then(function (result) {
