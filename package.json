@@ -12,10 +12,13 @@
     "express": "~4.16.0",
     "http-errors": "~1.6.2",
     "morgan": "~1.9.0",
-	"request": "^2.87.0",
-	"sequelize": "^4.37.10",
+    "request": "^2.87.0",
+    "passport": "^0.4.0",
+    "cu8-sequelize-oracle": "^1.0.5",
+    "sequelize": "^4.37.10",
     "moment": "^2.22.2",
     "bcrypt": "^2.0.1",
-    "jsonwebtoken": "^8.3.0"
+    "jsonwebtoken": "^8.3.0",
+    "mysql2": "^1.5.3"
   }
 }

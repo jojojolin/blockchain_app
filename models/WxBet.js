@@ -37,13 +37,13 @@ const WxBet = sequelize.define(
 
 // 同步模型到数据库
 // 通过设置force属性会首先删除表并重新创建
-// Bet.sync({force: false})
-//     .then(function() {
-//         console.log("Bet sync successfully");
-//     })
-//     .catch(function(err){
-//         console.log("Bet sync fail: "+err);
-//     });
+WxBet.sync({force: false})
+    .then(function() {
+        console.log("WxBet sync successfully");
+    })
+    .catch(function(err){
+        console.log("WxBet sync fail: "+err);
+    });
 
 
-module.exports = Bet;
+module.exports = WxBet;

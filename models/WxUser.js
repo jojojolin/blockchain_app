@@ -28,14 +28,14 @@ const WxUser = sequelize.define(
 
 // 同步模型到数据库
 // 通过设置force属性会首先删除表并重新创建
-// User.sync({force: false})
-//     .then(function() {
-//         console.log("User sync successfully");
-//     })
-//     .catch(function(err){
-//         console.log("User sync fail: "+err);
-//     });
+WxUser.sync({force: false})
+    .then(function() {
+        console.log("WxUser sync successfully");
+    })
+    .catch(function(err){
+        console.log("WxUser sync fail: "+err);
+    });
 
 
-module.exports = User;
+module.exports = WxUser;
 

@@ -4,6 +4,7 @@ var request = require("request");
 var WxUser = require("../../models/WxUser");
 var sequelize = require('sequelize');
 var jsonwebtoken = require('jsonwebtoken');
+var passport = require('passport');
 
 
 router.post('/wx/token', function (req, res, next) {
@@ -79,6 +80,4 @@ router.post('/wx/bet', function (req, res, next){
 
 
 module.exports = router;
-
-
 
