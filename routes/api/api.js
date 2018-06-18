@@ -17,7 +17,7 @@ router.post('/wx/token', function (req, res, next) {
     request({
         url:'GET https://api.weixin.qq.com/sns/jscode2session'+param,
         method:'GET',
-        headers:{'Content-Type':'text/json' }
+        //headers:{'Content-Type':'text/json' }
     }, function(error, response, body){
         if(!error && response.statusCode===200){
             body = JSON.parse(body);
