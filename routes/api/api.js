@@ -7,8 +7,8 @@ var jsonwebtoken = require('jsonwebtoken');
 
 
 router.post('/wx/token', function (req, res, next) {
-    let appid='wx458de2a971d24b5e';
-    let secret='a78f7cfd97a33f83023e24941d95e34c';
+    let appid='wx18cc75dbf1ca30aa';
+    let secret='bce9584cf3b1c35a1833fd158e9e2e0d';
     let grant_type='authorization_code';
     let js_code = req.body.code;
     let param = '?appid='+appid+"&secret="+secret+"&js_code"+js_code+"&grant_type="+grant_type;
