@@ -1,6 +1,14 @@
 const jsonwebtoken = require('jsonwebtoken');
 
 
+// function endcode(payload){
+//     console.log("Entered endcode.");
+//     let result = jsonwebtoken.sign(payload,"this is a secret",
+//         {expiresIn: (60 * 60) + Math.floor(Date.now() / 1000)});  // 设置 token 过期时间
+//     console.log("result is "+result);
+//     return result;
+// }
+
 function endcode(payload){
     return jsonwebtoken.sign({
         data: payload,
@@ -31,9 +39,9 @@ function verifyid(token, idname, id){
 
 
 module.exports = {
-    endcode: endcode,
-    decode: decode,
-    verify: verify,
-    verifyid: verifyid
-};
+    endcode,
+    decode,
+    verify,
+    verifyid
+}; 
 

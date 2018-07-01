@@ -3,9 +3,9 @@
 const Sequelize = require('sequelize');
 
 
-const sequelize = new Sequelize('app_blockchain4', 'ymwko0znjn', '0k32403l5lk314my3521z1wzlimx4yhwwy2hilz0', {
-    host: 'w.rdc.sae.sina.com.cn',
-    port: 3306,
+const sequelize = new Sequelize('app_blockchain4', 'jolin', 'J860809c', {
+    host: 'localhost',
+    port: 0000,
     dialect: 'mysql',
     pool: {
         min: 0,

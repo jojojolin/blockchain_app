@@ -12,7 +12,7 @@ const WxBet = sequelize.define(
             autoIncrement: true,
         },
         openid: {
-            type: Sequelize.INTEGER,
+            type: Sequelize.STRING(100),
             allowNull: false
         },
         match_id: {

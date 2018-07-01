@@ -1,0 +1,424 @@
+[
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "return",
+      "texture": "66GigQQeJP8J5sXL4TBA9q",
+      "rect": [
+        0,
+        0,
+        48,
+        47
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        48,
+        47
+      ]
+    }
+  },
+  [
+    {
+      "__type__": "cc.SceneAsset",
+      "_name": "look",
+      "scene": {
+        "__id__": 1
+      },
+      "asyncLoadAssets": null
+    },
+    {
+      "__type__": "cc.Scene",
+      "_name": "New Node",
+      "_children": [
+        {
+          "__id__": 2
+        }
+      ],
+      "_anchorPoint": {
+        "__type__": "cc.Vec2"
+      },
+      "autoReleaseAssets": false
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "Canvas",
+      "_parent": {
+        "__id__": 1
+      },
+      "_children": [
+        {
+          "__id__": 3
+        }
+      ],
+      "_components": [
+        {
+          "__type__": "cc.Canvas",
+          "node": {
+            "__id__": 2
+          },
+          "_designResolution": {
+            "__type__": "cc.Size",
+            "width": 640,
+            "height": 960
+          },
+          "_fitWidth": true,
+          "_fitHeight": false
+        }
+      ],
+      "_id": "e2TnNhh3JB4b6r4ofuZuC3",
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 640,
+        "height": 960
+      },
+      "_position": {
+        "__type__": "cc.Vec2",
+        "x": 320,
+        "y": 480
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "New Layout",
+      "_parent": {
+        "__id__": 2
+      },
+      "_children": [
+        {
+          "__id__": 4
+        },
+        {
+          "__id__": 5
+        },
+        {
+          "__id__": 6
+        }
+      ],
+      "_components": [
+        {
+          "__type__": "cc.Sprite",
+          "node": {
+            "__id__": 3
+          },
+          "_type": 1,
+          "_sizeMode": 0
+        },
+        {
+          "__type__": "cc.Layout",
+          "node": {
+            "__id__": 3
+          },
+          "_layoutSize": {
+            "__type__": "cc.Size",
+            "width": 600,
+            "height": 750
+          }
+        },
+        {
+          "__type__": "cc.Widget",
+          "node": {
+            "__id__": 3
+          },
+          "_alignFlags": 17,
+          "_top": 10
+        }
+      ],
+      "_color": {
+        "__type__": "cc.Color",
+        "r": 167,
+        "g": 167,
+        "b": 167
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 600,
+        "height": 750
+      },
+      "_position": {
+        "__type__": "cc.Vec2",
+        "y": 95
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "bg",
+      "_parent": {
+        "__id__": 3
+      },
+      "_components": [
+        {
+          "__type__": "cc.Sprite",
+          "node": {
+            "__id__": 4
+          },
+          "_spriteFrame": {
+            "__uuid__": "b5zBB/rIhNE46IMXAoRxXJ"
+          },
+          "_sizeMode": 0
+        },
+        {
+          "__type__": "cc.Widget",
+          "node": {
+            "__id__": 4
+          },
+          "_alignFlags": 17,
+          "_top": -10
+        }
+      ],
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 700,
+        "height": 1200
+      },
+      "_position": {
+        "__type__": "cc.Vec2",
+        "y": -215
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "return",
+      "_parent": {
+        "__id__": 3
+      },
+      "_components": [
+        {
+          "__type__": "cc.Sprite",
+          "node": {
+            "__id__": 5
+          },
+          "_spriteFrame": {
+            "__uuid__": "441F15wCVNzrz5IaWHUEg4"
+          }
+        },
+        {
+          "__type__": "ae266doIRBBq4Lu07YdcBD0",
+          "node": {
+            "__id__": 5
+          }
+        }
+      ],
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 48,
+        "height": 47
+      },
+      "_position": {
+        "__type__": "cc.Vec2",
+        "x": -205,
+        "y": 329
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "content",
+      "_parent": {
+        "__id__": 3
+      },
+      "_children": [
+        {
+          "__id__": 7
+        },
+        {
+          "__id__": 8
+        },
+        {
+          "__id__": 9
+        },
+        {
+          "__id__": 10
+        }
+      ],
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 600,
+        "height": 750
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "cor",
+      "_parent": {
+        "__id__": 6
+      },
+      "_components": [
+        {
+          "__type__": "cc.Sprite",
+          "node": {
+            "__id__": 7
+          },
+          "_spriteFrame": {
+            "__uuid__": "95d/2/ke1He5V36g1vNofP"
+          }
+        }
+      ],
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 12,
+        "height": 12
+      },
+      "_position": {
+        "__type__": "cc.Vec2",
+        "x": -145,
+        "y": 15
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "label",
+      "_parent": {
+        "__id__": 6
+      },
+      "_components": [
+        {
+          "__type__": "cc.Label",
+          "node": {
+            "__id__": 8
+          },
+          "_useOriginalSize": false,
+          "_actualFontSize": 30,
+          "_fontSize": 30,
+          "_N$string": "积分规则",
+          "_N$horizontalAlign": 1,
+          "_N$verticalAlign": 1,
+          "_N$fontFamily": "等线",
+          "_N$overflow": 1
+        },
+        {
+          "__type__": "cc.Widget",
+          "node": {
+            "__id__": 8
+          },
+          "_target": {
+            "__id__": 3
+          },
+          "_alignFlags": 17,
+          "_top": 80
+        }
+      ],
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 120,
+        "height": 40
+      },
+      "_position": {
+        "__type__": "cc.Vec2",
+        "y": 275
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "label",
+      "_parent": {
+        "__id__": 6
+      },
+      "_components": [
+        {
+          "__type__": "cc.Label",
+          "node": {
+            "__id__": 9
+          },
+          "_useOriginalSize": false,
+          "_actualFontSize": 24,
+          "_fontSize": 24,
+          "_N$string": "本游戏中积分产生规则写在共识算法\n中，这一算法使得每个玩家都是一\n个区块链网络节点，识别到玩家可以\n通过完成设定规则下的活动来公平地\n获取积分，获取积分的活动包括\n比赛中获胜\n   分享、邀请朋友获得积分\n由于本游戏中积分都由相应规则下的\n活动获得，且积分都保存于区块链网\n络，在这种去中心化的网络中，大家\n的积分获取是公平的，积分的保存是\n安全的，不会因为我们的网络受到攻\n击而导致损失，最大限度保障您的游戏体验\n",
+          "_N$horizontalAlign": 1,
+          "_N$verticalAlign": 1,
+          "_N$fontFamily": "等线"
+        },
+        {
+          "__type__": "cc.Widget",
+          "node": {
+            "__id__": 9
+          },
+          "_alignFlags": 17,
+          "_top": 141,
+          "_horizontalCenter": 2
+        }
+      ],
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 456,
+        "height": 560
+      },
+      "_position": {
+        "__type__": "cc.Vec2",
+        "x": 2,
+        "y": -46
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "cor",
+      "_parent": {
+        "__id__": 6
+      },
+      "_components": [
+        {
+          "__type__": "cc.Sprite",
+          "node": {
+            "__id__": 10
+          },
+          "_spriteFrame": {
+            "__uuid__": "95d/2/ke1He5V36g1vNofP"
+          }
+        }
+      ],
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 12,
+        "height": 12
+      },
+      "_position": {
+        "__type__": "cc.Vec2",
+        "x": -144,
+        "y": -27
+      }
+    }
+  ],
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "cor",
+      "texture": "f44LObyxROHLUjUqFti2GJ",
+      "rect": [
+        1,
+        1,
+        12,
+        12
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        14,
+        14
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "regular",
+      "texture": "52diDybhFPjbUnLOwIq2QM",
+      "rect": [
+        0,
+        0,
+        640,
+        960
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        640,
+        960
+      ]
+    }
+  }
+]
