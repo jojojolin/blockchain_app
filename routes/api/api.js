@@ -1,4 +1,4 @@
-var express = require('express');
+   var express = require('express');
 var router = express.Router();
 var request = require("request");
 var WxUser = require("../../models/WxUser");
@@ -108,7 +108,7 @@ router.post('/wx/token', function (req, res, next) {
                                         userid: userid,
                                         openid: wechat_openid,
                                     },
-                                exp: (60 * 60) + Math.floor(Date.now() / 1000),  // 设置 token 过期时间
+                                exp: (60 * 60 * 24 * 2) + Math.floor(Date.now() / 1000),  // 设置 token 过期时间
                             }, "this is a secret");
                             res.json({
                                 token: token,
